@@ -2,206 +2,341 @@
 /* Your general styles go here */
 
 /* Header styles */
-/* ... (Header styles remain the same) ... */
-
-/* Navbar styles */
-/* ... (Navbar styles remain the same) ... */
-
-/* Header styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+}
+
+.active {
+  font-weight: bold; /* Highlight the active menu item */
+}
+
+.user-options a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.icon-list {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: end;
+}
+
+.icon-list a {
+  margin: 0 10px; /* Adjust as needed */
+  transition: transform 0.3s ease-in-out; /* Transition effect */
+}
+
+.icon-list a:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+.icon-list img {
+  width: 50px; /* Adjust icon size as needed */
+  height: auto;
+}
+/* Main content styles */
+
+/* Additional styles for new content */
+/* Styles for the hero section */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+}
+
+.big-logo img {
+  max-width: 300px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Styles for features section */
+.features {
+  padding: 50px 20px;
+}
+
+.features h2 {
+  text-align: center;
+}
+.cards-carousel {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  scrollbar-width: none; /* Hide scrollbar for browsers */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.cards-carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+.card img{
+  height: 150px;
+  max-width: 100%;
+  max-height: 100%; /* Ensure image fits within container */
+  object-fit: contain; /* Maintain aspect ratio without stretching */
+  max-width: 100%;
+  max-height: 100%; /* Ensure image fits within container */
+  object-fit: contain; /* Maintain aspect ratio without stretching */
+}
+
+
+.card {
+  flex: 0 0 calc(25% - 20px); /* 25% width with 20px gap */
+  width: 200px; /* Fixed width for each card */
+  height: 250px; /* Fixed height for each card */
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+  margin-top: 0;
+}
+ .options-to-explore a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Change link color */
+}
+
+.features a {
+  text-decoration: none; /* Remove underline */
+  color: #333; 
+}
+
+/* Styles for options to explore section */
+.options-to-explore {
+  padding: 50px 20px;
+}
+
+.options-to-explore h2 {
+  text-align: center;
+}
+
+.explore-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.explore-option {
+  text-align: center;
+  width: 300px; /* Adjust width as needed */
+}
+
+.explore-option img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Media Queries */
+/* Add media queries for different screen sizes */
+/* Previous CSS styles remain the same */
+
+/* Media Queries */
+
+/* Styles for small phones */
+@media only screen and (max-width: 480px) {
+  /* Adjustments for small phones */
+  header {
+    padding: 10px;
   }
-  
+
   .logo img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto;
+    width: 80px;
   }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
+
   nav ul li {
-    margin-right: 20px;
-    position: relative;
+    margin-right: 10px;
   }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav ul li:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: #333;
-    padding: 12px 16px;
-    display: block;
-  }
-  
-  .active {
-    font-weight: bold; /* Highlight the active menu item */
-  }
-  
+
   .user-options a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
+    margin-left: 10px;
   }
-  .icon-list {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    align-items: end;
-  }
-  
-  .icon-list a {
-    margin: 0 10px; /* Adjust as needed */
-    transition: transform 0.3s ease-in-out; /* Transition effect */
-  }
-  
-  .icon-list a:hover {
-    transform: scale(1.1); /* Enlarge on hover */
-  }
-  
-  .icon-list img {
-    width: 50px; /* Adjust icon size as needed */
-    height: auto;
-  }
-/* Main content styles for DevOps page */
-main {
-    padding: 20px;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  .content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* DevOps specific content styles */
-  /* Hero section */
+
   .hero-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f0f0f0;
+    padding: 30px 10px;
   }
-  
+
   .big-logo img {
-    max-width: 300px; /* Adjust the size as needed */
-    height: auto;
-    margin-bottom: 20px;
+    max-width: 200px;
   }
-  
-  /* Features section */
+
   .features {
-    padding: 50px 20px;
+    padding: 30px 10px;
   }
-  
-  .features h2 {
-    text-align: center;
-  }
-  
-  .cards-carousel {
-    display: flex;
-    justify-content: space-between;
-    overflow-x: auto;
-    scrollbar-width: none; /* Hide scrollbar for browsers */
-    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
-  }
-  
-  .cards-carousel::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for WebKit browsers */
-  }
-  
+
   .card {
-    width: 300px; /* Adjust card width as needed */
-    background-color: #fff;
-    padding: 20px;
-    margin-right: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin-right: 10px;
   }
-  
-  .card h3 {
-    margin-top: 0;
-  }
-  
-  /* Options to explore section */
+
   .options-to-explore {
-    padding: 50px 20px;
+    padding: 30px 10px;
   }
-  
-  .options-to-explore h2 {
-    text-align: center;
-  }
-  
-  .explore-options {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+
   .explore-option {
-    text-align: center;
-    width: 300px; /* Adjust width as needed */
+    width: 250px;
   }
-  
-  .explore-option img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* Adjustments for tablets */
+  header {
+    padding: 15px;
   }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+
+  .logo img {
+    width: 100px;
   }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  .hero-section {
+    padding: 40px 20px;
   }
-  
-  .footer-links ul {
-    list-style: none;
-    display: flex;
+
+  .big-logo img {
+    max-width: 250px;
   }
-  
-  .footer-links ul li {
+
+  .features {
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 280px;
     margin-right: 15px;
   }
-  
-  .footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
+
+  .options-to-explore {
+    padding: 40px 20px;
   }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
+
+  .explore-option {
+    width: 280px;
   }
-  
-  /* Media Queries */
-  /* Styles for different screen sizes remain the same as provided in the previous CSS */
-  
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1025px) {
+  /* Adjustments for desktops */
+  header {
+    padding: 20px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .hero-section {
+    padding: 60px 30px;
+  }
+
+  .big-logo img {
+    max-width: 300px;
+  }
+
+  .features {
+    padding: 60px 30px;
+  }
+
+  .card {
+    width: 320px;
+    margin-right: 20px;
+  }
+
+  .options-to-explore {
+    padding: 60px 30px;
+  }
+
+  .explore-option {
+    width: 320px;
+  }
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  align-items: center;
+}
+
+.footer-content {
+
+  justify-content: space-between;
+ 
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links ul li {
+  margin-right: 15px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+/* Media Queries */
+/* Add media queries for different screen sizes */

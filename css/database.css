@@ -78,12 +78,7 @@ header {
     height: auto;
   }
   /* Main content styles */
-  main {
-    /* Your main content styles go here */
-    
-  }
-  /* Previous CSS styles remain the same */
-
+ 
 /* Additional styles for new content */
 /* Styles for the hero section */
 .hero-section {
@@ -106,11 +101,12 @@ header {
   .features h2 {
     text-align: center;
   }
-  
   .cards-carousel {
     display: flex;
     justify-content: space-between;
     overflow-x: auto;
+    flex-wrap: wrap;
+    gap: 20px;
     scrollbar-width: none; /* Hide scrollbar for browsers */
     -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
   }
@@ -118,18 +114,38 @@ header {
   .cards-carousel::-webkit-scrollbar {
     display: none; /* Hide scrollbar for WebKit browsers */
   }
+  .card img{
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%; /* Ensure image fits within container */
+    object-fit: contain; /* Maintain aspect ratio without stretching */
+    max-width: 100%;
+    max-height: 100%; /* Ensure image fits within container */
+    object-fit: contain; /* Maintain aspect ratio without stretching */
+  }
+  
   
   .card {
-    width: 300px; /* Adjust card width as needed */
+    flex: 0 0 calc(25% - 20px); /* 25% width with 20px gap */
+    width: 200px; /* Fixed width for each card */
+    height: 250px; /* Fixed height for each card */
+    margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
-    margin-right: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
   .card h3 {
     margin-top: 0;
+  }
+   .options-to-explore a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Change link color */
+  }
+  
+  .features a {
+    text-decoration: none; /* Remove underline */
+    color: #333; 
   }
   
   /* Styles for options to explore section */
@@ -290,12 +306,13 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    align-items: center;
   }
   
   .footer-content {
-    display: flex;
+
     justify-content: space-between;
-    align-items: center;
+   
   }
   
   .footer-links ul {

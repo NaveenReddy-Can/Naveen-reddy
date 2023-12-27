@@ -1,0 +1,661 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #333;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;/* General styles */
+    /* Your general styles go here */
+    
+    /* Header styles */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+      }
+      
+      .logo img {
+        width: 100px; /* Adjust the width as needed */
+        height: auto;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      
+      nav ul li {
+        margin-right: 20px;
+        position: relative;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav ul li:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        display: block;
+      }
+      
+      .active {
+        font-weight: bold; /* Highlight the active menu item */
+      }
+      
+      .user-options a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+      .icon-list {
+        display: flex;
+        justify-content: space-around; /* Adjust as needed */
+        align-items: end;
+      }
+      
+      .icon-list a {
+        margin: 0 10px; /* Adjust as needed */
+        transition: transform 0.3s ease-in-out; /* Transition effect */
+      }
+      
+      .icon-list a:hover {
+        transform: scale(1.1); /* Enlarge on hover */
+      }
+      
+      .icon-list img {
+        width: 50px; /* Adjust icon size as needed */
+        height: auto;
+      }
+      /* Main content styles */
+      main {
+        /* Your main content styles go here */
+        
+      }
+      /* Previous CSS styles remain the same */
+    
+    /* Additional styles for new content */
+    /* Styles for the hero section */
+    .hero-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f0f0f0;
+      }
+      
+      .big-logo img {
+        max-width: 300px; /* Adjust the size as needed */
+        height: auto;
+        margin-bottom: 20px;
+      }
+      
+      /* Styles for features section */
+      .features {
+        padding: 50px 20px;
+      }
+      
+      .features h2 {
+        text-align: center;
+      }
+      
+      .cards-carousel {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        scrollbar-width: none; /* Hide scrollbar for browsers */
+        -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+      }
+      
+      .cards-carousel::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for WebKit browsers */
+      }
+      
+      .card {
+        width: 300px; /* Adjust card width as needed */
+        background-color: #fff;
+        padding: 20px;
+        margin-right: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card h3 {
+        margin-top: 0;
+      }
+      
+      /* Styles for options to explore section */
+      .options-to-explore {
+        padding: 50px 20px;
+      }
+      
+      .options-to-explore h2 {
+        text-align: center;
+      }
+      
+      .explore-options {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      
+      .explore-option {
+        text-align: center;
+        width: 300px; /* Adjust width as needed */
+      }
+      
+      .explore-option img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      
+      /* Media Queries */
+      /* Add media queries for different screen sizes */
+      /* Previous CSS styles remain the same */
+    
+    /* Media Queries */
+    
+    /* Styles for small phones */
+    @media only screen and (max-width: 480px) {
+        /* Adjustments for small phones */
+        header {
+          padding: 10px;
+        }
+      
+        .logo img {
+          width: 80px;
+        }
+      
+        nav ul li {
+          margin-right: 10px;
+        }
+      
+        .user-options a {
+          margin-left: 10px;
+        }
+      
+        .hero-section {
+          padding: 30px 10px;
+        }
+      
+        .big-logo img {
+          max-width: 200px;
+        }
+      
+        .features {
+          padding: 30px 10px;
+        }
+      
+        .card {
+          width: 250px;
+          margin-right: 10px;
+        }
+      
+        .options-to-explore {
+          padding: 30px 10px;
+        }
+      
+        .explore-option {
+          width: 250px;
+        }
+      }
+      
+      /* Styles for tablets */
+      @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        /* Adjustments for tablets */
+        header {
+          padding: 15px;
+        }
+      
+        .logo img {
+          width: 100px;
+        }
+      
+        .hero-section {
+          padding: 40px 20px;
+        }
+      
+        .big-logo img {
+          max-width: 250px;
+        }
+      
+        .features {
+          padding: 40px 20px;
+        }
+      
+        .card {
+          width: 280px;
+          margin-right: 15px;
+        }
+      
+        .options-to-explore {
+          padding: 40px 20px;
+        }
+      
+        .explore-option {
+          width: 280px;
+        }
+      }
+      
+      /* Styles for desktops */
+      @media only screen and (min-width: 1025px) {
+        /* Adjustments for desktops */
+        header {
+          padding: 20px;
+        }
+      
+        .logo img {
+          width: 60px;
+        }
+      
+        .hero-section {
+          padding: 60px 30px;
+        }
+      
+        .big-logo img {
+          max-width: 300px;
+        }
+      
+        .features {
+          padding: 60px 30px;
+        }
+      
+        .card {
+          width: 320px;
+          margin-right: 20px;
+        }
+      
+        .options-to-explore {
+          padding: 60px 30px;
+        }
+      
+        .explore-option {
+          width: 320px;
+        }
+      }
+      
+      
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .footer-links ul {
+        list-style: none;
+        display: flex;
+      }
+      
+      .footer-links ul li {
+        margin-right: 15px;
+      }
+      
+      .footer-links ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+     
+      
+      
+    
+      /* Media Queries */
+      /* Add media queries for different screen sizes */
+      
+    text-decoration: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #menuItems {
+    display: none;
+    background-color: #f0f0f0;
+  }
+  
+  #menuItems ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  #menuItems ul li {
+    margin: 10px 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  /* Your existing styles here */
+
+/* New styles for responsive design */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide nav items at smaller screen sizes */
+  }
+
+  #menuButton {
+    display: block; /* Display menu button */
+  }
+
+  #menuItems {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -200px; /* Hide menu off-screen initially */
+    width: 200px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transition: left 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+
+  #menuItems ul {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 50px;
+  }
+
+  #menuItems ul li {
+    margin: 10px 0;
+  }
+
+  #menuItems.show {
+    left: 0; /* Show menu by moving it to the left */
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(79deg,rgb(238, 238, 238),rgb(255, 255, 255));
+    z-index: 999;
+    box-shadow: 0px 0px 10px rgba(35, 117, 224, 0.5);
+
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(15, 116, 199);
+}
+
+.companyBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    padding: 10px;
+   
+    
+}
+
+#companyLogo{
+width: 70px;
+height: 100%;
+padding: 2px;
+}
+
+#companyLogo img{
+   width: 100%;
+   height: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 23px 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    transition: 0.5s color ease;
+    position: relative;
+    font-weight:400;
+}
+
+
+
+
+.material-symbols-outlined{
+    margin-left: 5px;
+}
+
+
+
+header .navbar ul li a:hover{
+   
+    transition: 0.4s;
+    color: rgba(44, 129, 204, 0.984);
+  }
+
+  header .navbar ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: rgba(3, 134, 234, 0.459);
+    height: 4px;
+    width: 0%;
+    border-radius: 10px;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+header .navbar ul li a:hover:after{
+    width:98%;
+}
+
+
+#hizmetmenu{
+
+    transition: 0.3s opacity ease;
+    display: none;
+}
+
+#hizmetmenu li a{
+    font-size: 15px;
+    font-weight: bold;
+
+    
+ }
+#projemenu li a{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header .navbar ul li ul{
+
+position: absolute;
+top: 90px;
+left: 0;
+width: 230px;
+background-color: rgba(220, 220, 220, 0.173);
+backdrop-filter: blur(5px);
+box-shadow: 0px 0px 10px rgba(35, 117, 224, 0.5);
+border-radius: 10px 10px 10px 10px;
+z-index: -4;
+
+}
+
+header .navbar ul li ul li ul{
+    left: 240px;
+    top: 0;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+   
+    padding: 10px auto;
+   
+}
+
+#eticaretMenu{
+display: none;
+}
+
+#projemenu{
+display: none;
+}
+
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+.open {
+    transform: rotate(180deg); 
+}
+
+#menu-bar{
+    display: none;
+}
+
+
+header label{
+    font-size: 20px;
+    color: #333 ;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Media Sorguları */
+
+@media(max-width: 1170px) {
+  
+header{
+    padding: 20px;
+   
+}
+
+header label{
+    display: initial;
+}
+
+header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+   border-top: 1px solid black;
+   display: none;
+}
+
+header .navbar ul li{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header .navbar ul li ul{
+   position:static;
+   width: 100%;
+   
+}
+header .navbar ul li ul li{
+    background-color: rgba(232, 232, 232, 0.437);
+    backdrop-filter: blur(5px);
+    
+ }
+
+ header .navbar ul li ul li ul li{
+    background-color: rgba(214, 214, 214, 0.886);
+    backdrop-filter: blur(5px);
+    
+ }
+
+ #menu-bar:checked ~ .navbar{
+    display: initial ;
+ }
+
+#menuicon{
+    padding-top: 10px;
+    font-size: 50px;
+    color: rgb(15, 116, 199);
+}
+
+}

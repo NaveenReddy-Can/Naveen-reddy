@@ -101,6 +101,17 @@ header {
   .features h2 {
     text-align: center;
   }
+
+
+  .card {
+    /* ... (existing styles) */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale the card slightly on hover */
+  }
+  
   .cards-carousel {
     display: flex;
     justify-content: space-between;

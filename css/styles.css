@@ -3,14 +3,14 @@
 
 /* Header styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
   .logo img {
     width: 100px; /* Adjust the width as needed */
     height: auto;
@@ -18,7 +18,8 @@ header {
   
   nav ul {
     list-style: none;
-    display: flex;
+    justify-content: center;
+    display: contents;
   }
   
   nav ul li {
@@ -194,86 +195,86 @@ header {
 
 /* Styles for small phones */
 @media only screen and (max-width: 480px) {
-    /* Adjustments for small phones */
-    header {
-      padding: 10px;
-    }
-  
-    .logo img {
-      width: 80px;
-    }
-  
-    nav ul li {
-      margin-right: 10px;
-    }
-  
-    .user-options a {
-      margin-left: 10px;
-    }
-  
-    .hero-section {
-      padding: 30px 10px;
-    }
-  
-    .big-logo img {
-      max-width: 200px;
-    }
-  
-    .features {
-      padding: 30px 10px;
-    }
-  
-    .card {
-      width: 250px;
-      margin-right: 10px;
-    }
-  
-    .options-to-explore {
-      padding: 30px 10px;
-    }
-  
-    .explore-option {
-      width: 250px;
-    }
+  /* Header styles */
+  header {
+    padding: 10px; /* Adjust padding for smaller header */
   }
   
-  /* Styles for tablets */
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
-    /* Adjustments for tablets */
-    header {
-      padding: 15px;
-    }
-  
-    .logo img {
-      width: 100px;
-    }
-  
-    .hero-section {
-      padding: 40px 20px;
-    }
-  
-    .big-logo img {
-      max-width: 250px;
-    }
-  
-    .features {
-      padding: 40px 20px;
-    }
-  
-    .card {
-      width: 280px;
-      margin-right: 15px;
-    }
-  
-    .options-to-explore {
-      padding: 40px 20px;
-    }
-  
-    .explore-option {
-      width: 280px;
-    }
+  .logo img {
+    width: 80px; /* Reduce logo size for smaller screens */
   }
   
+  nav ul {
+    flex-direction: column; /* Change menu items to a vertical list */
+    align-items: center; /* Center align menu items */
+    padding: 0; /* Reset padding */
+  }
+  
+  nav ul li {
+    margin: 10px 0; /* Adjust margin for smaller spacing */
+    position: static; /* Reset position */
+  }
+  
+  nav ul li a {
+    display: block; /* Make menu items full width */
+    text-align: center; /* Center align text */
+  }
+  
+  .user-options {
+    margin-top: 10px; /* Adjust spacing for user options */
+  }
+  
+  .icon-list {
+    justify-content: center; /* Center align icons */
+  }
+  
+  .icon-list a {
+    margin: 0 5px; /* Adjust margin for smaller spacing */
+  }
+  
+  .icon-list img {
+    width: 40px; /* Reduce icon size for smaller screens */
+  }
+  
+  /* Styles for hero section */
+  .hero-section {
+    padding: 30px 10px; /* Adjust padding for smaller section */
+  }
+  
+  .big-logo img {
+    max-width: 250px; /* Reduce size of big logo */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+  
+  /* Styles for features section */
+  .features {
+    padding: 30px 10px; /* Adjust padding for smaller section */
+  }
+  
+  .features h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+  
+  /* Styles for options to explore section */
+  .options-to-explore {
+    padding: 30px 10px; /* Adjust padding for smaller section */
+  }
+  
+  .options-to-explore h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+  
+  .explore-option {
+    width: 100%; /* Make explore options full width */
+    max-width: 250px; /* Limit width of options */
+    margin: 10px auto; /* Center and adjust margin */
+  }
+  
+  .explore-option img {
+    max-width: 100%; /* Adjust image size */
+  }
+}
+
   /* Styles for desktops */
   @media only screen and (min-width: 1025px) {
     /* Adjustments for desktops */
@@ -350,5 +351,53 @@ header {
   
 
   /* Media Queries */
+  /* CSS for regular navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-items li {
+  display: inline;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CSS for mobile (hamburger) menu */
+.menu-toggle {
+  display: none; /* Hide the hamburger icon by default */
+}
+
+  @media screen and (max-width: 768px) {
+    .menu-items {
+      display: none; /* Hide the menu items by default on smaller screens */
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show the hamburger icon */
+      cursor: pointer;
+    }
+  
+    /* Toggle visibility of menu items when hamburger icon is clicked */
+    .menu-toggle.active + .menu-items {
+      display: block;
+    }
+  }
   /* Add media queries for different screen sizes */
   

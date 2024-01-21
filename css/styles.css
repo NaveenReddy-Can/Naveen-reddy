@@ -5,18 +5,28 @@
 header {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 20px;
   background-color: #333;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Use a higher z-index to ensure the header appears above other elements */
 }
+
 
   .logo img {
     width: 100px; /* Adjust the width as needed */
     height: auto;
-  }
+    position: fixed; /* Use fixed positioning */
+    left: 0; /* Align to the left edge of the screen */
+    top: 0; /* Align to the top edge of the screen */
+    margin: 20px; /* Optional margin for positioning */
+}
+
   
   nav ul {
+    position: fixed;
     list-style: none;
     justify-content: center;
     display: contents;
@@ -186,7 +196,43 @@ header {
     height: auto;
     margin-bottom: 15px;
   }
-  
+  /* job button */
+  /* Adjust styles as needed */
+  .jobs{
+    
+    justify-content: flex-end;
+
+  }
+  .icon-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.icon-container a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-container img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.dropdown-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
   /* Media Queries */
   /* Add media queries for different screen sizes */
   /* Previous CSS styles remain the same */
@@ -314,37 +360,46 @@ header {
   
   
   /* Footer styles */
-  footer {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set a minimum height for the body */
+}
+
+footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .footer-content {
+}
 
+.footer-content {
+    display: flex;
     justify-content: space-between;
-   
-  }
-  
-  .footer-links ul {
+    width: 100%;
+}
+
+.footer-links ul {
     list-style: none;
     display: flex;
-  }
-  
-  .footer-links ul li {
+}
+
+.footer-links ul li {
     margin-right: 15px;
-  }
-  
-  .footer-links ul li a {
+}
+
+.footer-links ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     text-align: center;
     margin-top: 20px;
-  }
+}
+
   
  
   

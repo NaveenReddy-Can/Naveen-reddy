@@ -1,167 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevOps Tools</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Link to Font Awesome CSS -->
-  <link rel="stylesheet" href="css/devops.css"> <!-- Link to your CSS file -->
-</head>
-<body>
-  <header>
-    <!-- Navbar with dropdowns and Font Awesome icons -->
-    <div>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps Tools</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar with dropdowns and Font Awesome icons -->
+
+      <nav>
+        <div class="logo">
+          <img src="images-icons/n.png" alt="Logo" />
+        </div>
         <ul>
-          <li><a href="#" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="dropdown">
             <a href="#">Programming</a>
             <div class="dropdown-content">
-              <a href="Spring.html">Spring Apps</a>
+              <a href="programming/spring.html">Spring Apps</a>
               <a href="https://www.python.org/">Python 3 </a>
               <a href="https://www.djangoproject.com/">Django</a>
-              <a href="https://legacy.reactjs.org/docs/getting-started.html">React</a>
-              <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C Sharp</a>
+              <a href="https://legacy.reactjs.org/docs/getting-started.html"
+                >React</a
+              >
+              <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+                >C Sharp</a
+              >
             </div>
           </li>
-  
-          <li class="dropdown">
-              <a href="Devops.html">Devops</a>
-              <div class="dropdown-content">
-                <a href="https://git-scm.com/">Git</a>
-                <a href="https://docs.docker.com/">Docker</a>
-                <a href="https://www.jenkins.io/">Jenkins</a>
-                <a href="https://developer.hashicorp.com/terraform/tutorials">Terraform</a>
-                <a href="https://www.sonarsource.com/products/sonarqube/">SonarQube</a>
-                <a href="https://ubuntu.com/">Bash-script</a>
-                <a href="#">Powerhell</a>
-                <a href="https://grafana.com/">Grafana/Prometheus</a>
-                <a href="https://prometheus.io/">Prometheus</a>
-                <a href="https://www.puppet.com/">Puppet</a>
-                <a href="https://www.ansible.com/">Ansible</a>
-                <a href="https://www.hashicorp.com/products/vault">Hashicorp-Vault</a>
-                <a href="https://maven.apache.org/">Maven</a>
-                <a href="https://jfrog.com/">J Frog</a>
-                <a href="https://www.packer.io/">Packer</a>
-                <a href="https://about.gitlab.com/">Git lab</a>
-                <a href="https://kubernetes.io/docs/home/">Kubernetes</a>
-              
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#">Cloud</a>
-              <div class="dropdown-content">
-                <a href="#">Azure</a>
-                <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-2_477186e4e020297a&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=Gy8QWzBfWo3ulEtMJb-x46twFfzf2ywQdWq4RLx6wlQ&code_challenge_method=SHA-256">AWS</a>
-                <a href="https://console.cloud.google.com/getting-started?pli=1">Google-Coud</a>
-              </div>
-            </li>
-            <li class="dropdown">
-          <li><a href="Database.html">Database</a>
-            <div class="dropdown-content">
-            <a href="https://dev.mysql.com/doc/">SQL</a>
-            <a href="https://www.mongodb.com/">Mongo-DB</a>
-            <a href="https://www.oracle.com/ca-en/database/technologies/appdev/plsql.html">PL-SQL</a>
-          </div></li>
-        </ul>
-        
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <!-- Content about DevOps tools and trendy links -->
-    <section class="content">
-      <h2>About DevOps Tools</h2>
-      <p>
-        DevOps tools help automate and streamline the software development process, from code building to deployment and monitoring.
-        They enable collaboration between development and operations teams, fostering a culture of continuous integration and delivery.
-        Below are some popular DevOps tools:
-      </p>
-   
-      <section class="features">
-        <h2>Our Features</h2>
-        <div class="cards-carousel">
-          <!-- Carousel for rotating cards goes here -->
-          <!-- Each card can be a service or feature -->
-  
-          <a
-            href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=148251083167&campaign=19313278993&creative=660800583109&device=c&keyword=jira%20software%20app&matchtype=p&network=g&placement=&ds_kids=p74602270765&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJjwiWQKankcowGRda7FWY0JC8KMEURrratWgte4tTEjkk4E1aZkbvAaAr9nEALw_wcB&gclsrc=aw.ds">
-            <div class="card">
-              <h3>Docker</h3>
-              <img src="images-icons/Docker.png" alt="Big Logo">
+          <li class="dropdown">
+            <a href="devops.html" class="active" style="color: #ffa500"
+              >Devops</a
+            >
+            <div class="dropdown-content">
+              <a href="https://git-scm.com/">Git</a>
+              <a href="https://docs.docker.com/">Docker</a>
+              <a href="https://www.jenkins.io/">Jenkins</a>
+              <a href="https://developer.hashicorp.com/terraform/tutorials"
+                >Terraform</a
+              >
+              <a href="https://www.sonarsource.com/products/sonarqube/"
+                >SonarQube</a
+              >
+              <a href="https://ubuntu.com/">Bash-script</a>
+              <a href="#">Powerhell</a>
+              <a href="https://grafana.com/">Grafana/Prometheus</a>
+              <a href="https://prometheus.io/">Prometheus</a>
+              <a href="https://www.puppet.com/">Puppet</a>
+              <a href="https://www.ansible.com/">Ansible</a>
+              <a href="https://www.hashicorp.com/products/vault"
+                >Hashicorp-Vault</a
+              >
+              <a href="https://maven.apache.org/">Maven</a>
+              <a href="https://jfrog.com/">J Frog</a>
+              <a href="https://www.packer.io/">Packer</a>
+              <a href="https://about.gitlab.com/">Git lab</a>
+              <a href="https://kubernetes.io/docs/home/">Kubernetes</a>
             </div>
-          </a>
-          <a href="https://www.figma.com/">
-          <div class="card">
-            <h3>Jenkins</h3>
-            <img src="images-icons/Jenkins.png" alt="Big Logo">
-          </div>
-        </a>
-          <a href="https://kubernetes.io/docs/home/">
-          <div class="card">
-            <h3>SonarQube</h3>
-            <img src="images-icons/sonarqube-share.png" alt="Big Logo">
-          </div>
-        </a>
-        <a href="https://www.docker.com/#">
-          <div class="card">
-            <h3>jfrog</h3>
-            <img src="images-icons/jfrog.png" alt="Big Logo">
-          </div>
-          </a>
-          <a href="https://www.terraform.io/">
-            <div class="card">
-              <h3>Terraform</h3>
-              <img src="images-icons/terrfaorm.png" alt="Big Logo">
+          </li>
+          <li class="dropdown">
+            <a href="cloud.html">Cloud</a>
+            <div class="dropdown-content">
+              <a href="#">Azure</a>
+              <a
+                href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-2_477186e4e020297a&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=Gy8QWzBfWo3ulEtMJb-x46twFfzf2ywQdWq4RLx6wlQ&code_challenge_method=SHA-256"
+                >AWS</a
+              >
+              <a href="https://console.cloud.google.com/getting-started?pli=1"
+                >Google-Coud</a
+              >
             </div>
+          </li>
+          <li class="dropdown"></li>
+          <li>
+            <a href="database.html">Database</a>
+            <div class="dropdown-content">
+              <a href="https://dev.mysql.com/doc/">SQL</a>
+              <a href="https://www.mongodb.com/">Mongo-DB</a>
+              <a
+                href="https://www.oracle.com/ca-en/database/technologies/appdev/plsql.html"
+                >PL-SQL</a
+              >
+            </div>
+          </li>
+          <li><a href="diet.html">Diet</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Content about DevOps tools and trendy links -->
+      <section class="content">
+        <h2>About DevOps Tools</h2>
+        <p>
+          DevOps tools help automate and streamline the software development
+          process, from code building to deployment and monitoring. They enable
+          collaboration between development and operations teams, fostering a
+          culture of continuous integration and delivery. Below are some popular
+          DevOps tools:
+        </p>
+
+        <section class="features">
+          <h2>Our Features</h2>
+          <div class="cards-carousel">
+            <!-- Carousel for rotating cards goes here -->
+            <!-- Each card can be a service or feature -->
+
+            <a
+              href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=148251083167&campaign=19313278993&creative=660800583109&device=c&keyword=jira%20software%20app&matchtype=p&network=g&placement=&ds_kids=p74602270765&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJjwiWQKankcowGRda7FWY0JC8KMEURrratWgte4tTEjkk4E1aZkbvAaAr9nEALw_wcB&gclsrc=aw.ds"
+            >
+              <div class="card">
+                <h3>Docker</h3>
+                <img src="images-icons/Docker.png" alt="Big Logo" />
+              </div>
             </a>
-         
+            <a href="https://www.figma.com/">
+              <div class="card">
+                <h3>Jenkins</h3>
+                <img src="images-icons/Jenkins.png" alt="Big Logo" />
+              </div>
+            </a>
+            <a href="https://kubernetes.io/docs/home/">
+              <div class="card">
+                <h3>SonarQube</h3>
+                <img src="images-icons/sonarqube-share.png" alt="Big Logo" />
+              </div>
+            </a>
+            <a href="https://www.docker.com/#">
+              <div class="card">
+                <h3>jfrog</h3>
+                <img src="images-icons/jfrog.png" alt="Big Logo" />
+              </div>
+            </a>
+            <a href="https://www.terraform.io/">
+              <div class="card">
+                <h3>Terraform</h3>
+                <img src="images-icons/terrfaorm.png" alt="Big Logo" />
+              </div>
+            </a>
+
             <a href="https://spring.io/projects/spring-boot/">
               <div class="card">
                 <h3>maven</h3>
-                <img src="images-icons/Maven.png" alt="Big Logo">
+                <img src="images-icons/Maven.png" alt="Big Logo" />
               </div>
-              </a>
-         
-              <a href="https://react.dev/">
-                <div class="card">
-                  <h3>Prometheus</h3>
-                  <img src="images-icons/prometheus.png" alt="Big Logo">
-                </div>
-                </a>
-         
-                <a href="https://www.mongodb.com/">
-                  <div class="card">
-                    <h3>Graphana</h3>
-                    <img src="images-icons/Graphana.png" alt="Big Logo">
-                  </div>
-                  </a>
-                  <a href="https://www.mongodb.com/">
-                    <div class="card">
-                      <h3>ELK</h3>
-                      <img src="images-icons/elk-logo.png" alt="Big Logo">
-                    </div>
-                    </a>
-                 
-          <!-- Add more cards as needed -->
-        </div>
+            </a>
+
+            <a href="https://react.dev/">
+              <div class="card">
+                <h3>Prometheus</h3>
+                <img src="images-icons/prometheus.png" alt="Big Logo" />
+              </div>
+            </a>
+
+            <a href="https://www.mongodb.com/">
+              <div class="card">
+                <h3>Graphana</h3>
+                <img src="images-icons/Graphana.png" alt="Big Logo" />
+              </div>
+            </a>
+            <a href="https://www.mongodb.com/">
+              <div class="card">
+                <h3>ELK</h3>
+                <img src="images-icons/elk-logo.png" alt="Big Logo" />
+              </div>
+            </a>
+
+            <!-- Add more cards as needed -->
+          </div>
+        </section>
+
+        <!-- Trendy links -->
+        <h3>Trending Links</h3>
+        <ul>
+          <li>
+            <a href="https://dev.to/tag/devops">Dev.to - DevOps Articles</a>
+          </li>
+          <li>
+            <a href="https://thenewstack.io/tag/devops/"
+              >The New Stack - DevOps News</a
+            >
+          </li>
+          <li>
+            <a href="https://dzone.com/devops-tutorials-tools-news"
+              >DZone - DevOps Tutorials</a
+            >
+          </li>
+          <!-- Add more trendy links -->
+        </ul>
       </section>
+    </main>
 
-
-      <!-- Trendy links -->
-      <h3>Trending Links</h3>
-      <ul>
-        <li><a href="https://dev.to/tag/devops">Dev.to - DevOps Articles</a></li>
-        <li><a href="https://thenewstack.io/tag/devops/">The New Stack - DevOps News</a></li>
-        <li><a href="https://dzone.com/devops-tutorials-tools-news">DZone - DevOps Tutorials</a></li>
-        <!-- Add more trendy links -->
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <!-- Footer content goes here -->
-  </footer>
-</body>
+    <footer>
+      <!-- </div>
+      <div class="icon-list">
+        <a href="https://github.com"><i class="fa fa-github" style="font-size:36px;color:white"></i></a>
+        <a href="https://bitbucket.org"><i class="fa fa-bitbucket" style="font-size:36px;"></i></a>
+        <a href="https://gitlab.com"><i class="fa fa-gitlab" style="font-size:36px;color:skyblue"></i></a>
+        <a href="https://azure.com/devops"><i class="fa fa-cloud" style="font-size:36px;color:green"></i></a>
+      </div>-->
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

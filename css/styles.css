@@ -3,22 +3,33 @@
 
 /* Header styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-  }
-  
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Use a higher z-index to ensure the header appears above other elements */
+}
+
+
   .logo img {
     width: 100px; /* Adjust the width as needed */
     height: auto;
-  }
+    position: fixed; /* Use fixed positioning */
+    left: 0; /* Align to the left edge of the screen */
+    top: 0; /* Align to the top edge of the screen */
+    margin: 20px; /* Optional margin for positioning */
+}
+
   
   nav ul {
+    position: fixed;
     list-style: none;
-    display: flex;
+    justify-content: center;
+    display: contents;
   }
   
   nav ul li {
@@ -185,7 +196,43 @@ header {
     height: auto;
     margin-bottom: 15px;
   }
-  
+  /* job button */
+  /* Adjust styles as needed */
+  .jobs{
+    
+    justify-content: flex-end;
+
+  }
+  .icon-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.icon-container a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-container img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.dropdown-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
   /* Media Queries */
   /* Add media queries for different screen sizes */
   /* Previous CSS styles remain the same */
@@ -194,86 +241,86 @@ header {
 
 /* Styles for small phones */
 @media only screen and (max-width: 480px) {
-    /* Adjustments for small phones */
-    header {
-      padding: 10px;
-    }
-  
-    .logo img {
-      width: 80px;
-    }
-  
-    nav ul li {
-      margin-right: 10px;
-    }
-  
-    .user-options a {
-      margin-left: 10px;
-    }
-  
-    .hero-section {
-      padding: 30px 10px;
-    }
-  
-    .big-logo img {
-      max-width: 200px;
-    }
-  
-    .features {
-      padding: 30px 10px;
-    }
-  
-    .card {
-      width: 250px;
-      margin-right: 10px;
-    }
-  
-    .options-to-explore {
-      padding: 30px 10px;
-    }
-  
-    .explore-option {
-      width: 250px;
-    }
+  /* Header styles */
+  header {
+    padding: 10px; /* Adjust padding for smaller header */
   }
   
-  /* Styles for tablets */
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
-    /* Adjustments for tablets */
-    header {
-      padding: 15px;
-    }
-  
-    .logo img {
-      width: 100px;
-    }
-  
-    .hero-section {
-      padding: 40px 20px;
-    }
-  
-    .big-logo img {
-      max-width: 250px;
-    }
-  
-    .features {
-      padding: 40px 20px;
-    }
-  
-    .card {
-      width: 280px;
-      margin-right: 15px;
-    }
-  
-    .options-to-explore {
-      padding: 40px 20px;
-    }
-  
-    .explore-option {
-      width: 280px;
-    }
+  .logo img {
+    width: 80px; /* Reduce logo size for smaller screens */
   }
   
+  nav ul {
+    flex-direction: column; /* Change menu items to a vertical list */
+    align-items: center; /* Center align menu items */
+    padding: 0; /* Reset padding */
+  }
+  
+  nav ul li {
+    margin: 10px 0; /* Adjust margin for smaller spacing */
+    position: static; /* Reset position */
+  }
+  
+  nav ul li a {
+    display: block; /* Make menu items full width */
+    text-align: center; /* Center align text */
+  }
+  
+  .user-options {
+    margin-top: 10px; /* Adjust spacing for user options */
+  }
+  
+  .icon-list {
+    justify-content: center; /* Center align icons */
+  }
+  
+  .icon-list a {
+    margin: 0 5px; /* Adjust margin for smaller spacing */
+  }
+  
+  .icon-list img {
+    width: 40px; /* Reduce icon size for smaller screens */
+  }
+  
+  /* Styles for hero section */
+  .hero-section {
+    padding: 30px 10px; /* Adjust padding for smaller section */
+  }
+  
+  .big-logo img {
+    max-width: 250px; /* Reduce size of big logo */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+  
+  /* Styles for features section */
+  .features {
+    padding: 30px 10px; /* Adjust padding for smaller section */
+  }
+  
+  .features h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+  
+  /* Styles for options to explore section */
+  .options-to-explore {
+    padding: 30px 10px; /* Adjust padding for smaller section */
+  }
+  
+  .options-to-explore h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+  
+  .explore-option {
+    width: 100%; /* Make explore options full width */
+    max-width: 250px; /* Limit width of options */
+    margin: 10px auto; /* Center and adjust margin */
+  }
+  
+  .explore-option img {
+    max-width: 100%; /* Adjust image size */
+  }
+}
+
   /* Styles for desktops */
   @media only screen and (min-width: 1025px) {
     /* Adjustments for desktops */
@@ -313,42 +360,102 @@ header {
   
   
   /* Footer styles */
-  footer {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set a minimum height for the body */
+}
+
+footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .footer-content {
+}
 
+.footer-content {
+    display: flex;
     justify-content: space-between;
-   
-  }
-  
-  .footer-links ul {
+    width: 100%;
+}
+
+.footer-links ul {
     list-style: none;
     display: flex;
-  }
-  
-  .footer-links ul li {
+}
+
+.footer-links ul li {
     margin-right: 15px;
-  }
-  
-  .footer-links ul li a {
+}
+
+.footer-links ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     text-align: center;
-    margin-top: 20px;
-  }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
   
  
   
   
 
   /* Media Queries */
+  /* CSS for regular navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-items li {
+  display: inline;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CSS for mobile (hamburger) menu */
+.menu-toggle {
+  display: none; /* Hide the hamburger icon by default */
+}
+
+  @media screen and (max-width: 768px) {
+    .menu-items {
+      display: none; /* Hide the menu items by default on smaller screens */
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show the hamburger icon */
+      cursor: pointer;
+    }
+  
+    /* Toggle visibility of menu items when hamburger icon is clicked */
+    .menu-toggle.active + .menu-items {
+      display: block;
+    }
+  }
   /* Add media queries for different screen sizes */
   

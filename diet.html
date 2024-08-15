@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naveen reddy</title>
   <link rel="shortcut icon" type="image/x-icon" href="images-icons/n.png" />
-  <link rel="script" href="java-script/script.js">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/diet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
   <header>
-   
+   <div class="logo">
+      <img src="images-icons/n.png" alt="Logo">
+    </div>
     <nav>
-      <div class="logo">
-        <img src="images-icons/n.png" alt="Logo">
-      </div>
       <ul>
-        <li><a href="index.html" class="active" style="color: #ffa500">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="dropdown">
           <a href="#">Programming</a>
           <div class="dropdown-content">
@@ -57,7 +54,6 @@
             <a href="https://www.packer.io/">Packer</a>
             <a href="https://about.gitlab.com/">Git lab</a>
             <a href="https://kubernetes.io/docs/home/">Kubernetes</a>
-
           </div>
         </li>
         <li class="dropdown">
@@ -77,58 +73,186 @@
             <a href="https://www.oracle.com/ca-en/database/technologies/appdev/plsql.html">PL-SQL</a>
           </div>
         </li>
-        <li> <a href="diet.html">Diet</a></li>
+        <li> <a href="diet.html" style="color: #ffa500" class="active">Diet</a></li>
       </ul>
 
     </nav>
-    
   </div>
-  
-
-    
 
   </header>
 
   <!-- The previous HTML structure remains the same -->
-
+  <div class="tables-wrapper">
   <main>
     <section class="hero-section">
       <div class="big-logo">
 
       </div>
-     
-     
-      <p>Discover the latest innovations and explore our services.</p>
-    </section>
-    <div class="jobs">
-      <button class="dropdown-btn" onclick="toggleDropdown()"> <i class="fas fa-bars"></i> Jobs</button>
-      <div class="icon-container" id="iconDropdown">
-        <!-- Indeed -->
-        <a href="https://www.indeed.com/" target="_blank">
-            <img src="/images-icons/I.png" alt="Indeed">
-        </a>
-    
-        <!-- Monster -->
-        <a href="https://www.monster.com/" target="_blank">
-            <img src="/images-icons/M.png" alt="Monster">
-        </a>
-    
-        <!-- Glassdoor -->
-        <a href="https://www.glassdoor.com/" target="_blank">
-            <img src="/images-icons/g.png" alt="Glassdoor">
-        </a>
-    
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/" target="_blank">
-            <img src="/images-icons/linkedin.png" alt="LinkedIn">
-        </a>
-    
-        <!-- Dice -->
-        <a href="https://www.dice.com/" target="_blank">
-            <img src="/images-icons/dice.png" alt="Dice">
-        </a>
-      </div>
+      <div class="tables-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Food Group</th>
+            <th>Benefits</th>
+            <th>Food Sources</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Omega-3 Fatty Acids</td>
+            <td>Reduces inflammation, moisturizes scalp, promotes overall scalp health</td>
+            <td>Salmon, Flaxseeds, Walnuts</td>
+          </tr>
+          <tr>
+            <td>Protein-rich foods</td>
+            <td>Supports hair follicles, overall scalp health</td>
+            <td>Lean meats, Eggs, Legumes</td>
+          </tr>
+          <tr>
+            <td>Vitamin A</td>
+            <td>Promotes healthy scalp oils</td>
+            <td>Sweet Potatoes, Carrots, Dark Leafy Greens</td>
+          </tr>
+          <tr>
+            <td>Zinc</td>
+            <td>Supports scalp tissue repair</td>
+            <td>Nuts, Seeds, Whole Grains</td>
+          </tr>
+          <tr>
+            <td>Vitamin C</td>
+            <td>Aids collagen production, enhances scalp health</td>
+            <td>Citrus Fruits, Berries, Bell Peppers</td>
+          </tr>
+          <tr>
+            <td>Biotin</td>
+            <td>Strengthens hair, supports scalp health</td>
+            <td>Eggs, Almonds, Cauliflower</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <table class="styled-table2">
+        <thead>
+          <tr>
+            <th>Food Group</th>
+            <th>Benefits</th>
+            <th>Food Sources</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Hair & Skin Health</td>
+            <td>Rich in Omega-3 Fatty Acids</td>
+            <td>Salmon, Flaxseeds, Walnuts</td>
+          </tr>
+          <tr>
+            <td>High in Antioxidants</td>
+            <td>Berries, Dark Chocolate, Spinach</td>
+          </tr>
+          <tr>
+            <td>Protein-Rich Foods</td>
+            <td>Lean meats, Eggs, Legumes</td>
+          </tr>
+          <tr>
+            <td>Eye Health</td>
+            <td>Rich in Vitamin A & C</td>
+            <td>Carrots, Sweet Potatoes, Citrus Fruits</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Muscle Health</td>
+            <td>High in Protein</td>
+            <td>Chicken, Turkey, Greek Yogurt</td>
+          </tr>
+          <tr>
+            <td>Rich in Magnesium</td>
+            <td>Almonds, Spinach, Avocado</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Good Sleep</td>
+            <td>Contains Tryptophan</td>
+            <td>Turkey, Pumpkin Seeds, Bananas</td>
+          </tr>
+          <tr>
+            <td>Magnesium & Calcium Rich</td>
+            <td>Leafy Greens, Dairy, Nuts</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Fitness</td>
+            <td>Complex Carbohydrates</td>
+            <td>Whole Grains, Quinoa, Oats</td>
+          </tr>
+          <tr>
+            <td>High in Potassium</td>
+            <td>Bananas, Sweet Potatoes, Spinach</td>
+          </tr>
+        </tbody>
+      </table>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition Benefits</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<table class="styled-table3">
+  <thead>
+    <tr>
+      <th>Food Group</th>
+      <th>Food/Fruit</th>
+      <th>Benefits</th>
+      <th>Nutrients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Fruits -->
+    <tr>
+      <td>Fruits</td>
+      <td>Apple</td>
+      <td>Rich in fiber and antioxidants, supports heart health and digestion</td>
+      <td>Vitamin C, Fiber</td>
+    </tr>
+    <tr>
+      <td>Fruits</td>
+      <td>Orange</td>
+      <td>High in Vitamin C, boosts immunity, and supports skin health</td>
+      <td>Vitamin C</td>
+    </tr>
+    <!-- Vegetables -->
+    <tr>
+      <td>Vegetables</td>
+      <td>Spinach</td>
+      <td>High in iron, vitamins, and antioxidants, supports muscle and bone health</td>
+      <td>Vitamin A, Vitamin K, Iron</td>
+    </tr>
+    <tr>
+      <td>Vegetables</td>
+      <td>Broccoli</td>
+      <td>Rich in vitamins K & C, supports bone health and boosts immunity</td>
+      <td>Vitamin C, Vitamin K</td>
+    </tr>
+    <!-- Meats -->
+    <tr>
+      <td>Meats</td>
+      <td>Chicken Breast</td>
+      <td>High in lean protein, supports muscle growth and repair</td>
+      <td>Protein, Niacin</td>
+    </tr>
+    <tr>
+      <td>Meats</td>
+      <td>Salmon</td>
+      <td>Rich in Omega-3 fatty acids, supports heart and brain health</td>
+      <td>Omega-3 Fatty Acids, Vitamin D</td>
+    </tr>
+    <!-- Continue adding more items -->
+  </tbody>
+</table>
+</div>
+
+
     </div>
+    </section>
 
     <section class="features">
       <h2>Our Features</h2>
@@ -161,62 +285,17 @@
           <img src="images-icons/Docker.png" alt="Big Logo">
         </div>
         </a>
-        <a href="https://www.terraform.io/">
-          <div class="card">
-            <h3>Terraform</h3>
-            <img src="images-icons/terrfaorm.png" alt="Big Logo">
-          </div>
-          </a>
-       
-          <a href="https://spring.io/projects/spring-boot/">
-            <div class="card">
-              <h3>Spring Boot</h3>
-              <img src="images-icons/spring.png" alt="Big Logo">
-            </div>
-            </a>
-       
-            <a href="https://react.dev/">
-              <div class="card">
-                <h3>React</h3>
-                <img src="images-icons/React.jpg" alt="Big Logo">
-              </div>
-              </a>
-       
-              <a href="https://www.mongodb.com/">
-                <div class="card">
-                  <h3>mongodb</h3>
-                  <img src="images-icons/mongo.jpg" alt="Big Logo">
-                </div>
-                </a>
-               
+  
         <!-- Add more cards as needed -->
       </div>
     </section>
 
-    <section class="options-to-explore">
-      <h2>Options to Explore</h2>
-      <div class="explore-options">
-        <a href="https://ielts.org/">
-        <div class="explore-option">
-          <img src="images-icons/ielts.png" alt="Explore Option 1">
-          <h3>IELTS</h3>
-        </div>
-        </a>
-        <a href="">
-        <div class="explore-option">
-          <img src="images-icons/cyber.jpg" alt="Explore Option 2">
-          <h3>Cyber-Security</h3>
-        </div>
-      </a>
-        <!-- Add more explore options -->
-      </div>
-    </section>
-
+    
     <!-- Add more sections with different content -->
   </main>
 
 
-  <footer>
+<footer>
    
         
      <!-- </div>
@@ -231,13 +310,6 @@
       
      
   </footer>
-  
-  <script>
-    function toggleDropdown() {
-        var dropdown = document.getElementById("iconDropdown");
-        dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "flex" : "none";
-    }
-</script>
 </body>
 
 </html>

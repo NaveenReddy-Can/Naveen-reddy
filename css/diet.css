@@ -1,0 +1,171 @@
+/**************
+Table Styles here for Diet
+****************/
+/* Style for placing tables side by side */
+.tables-container {
+  display: flexbox;
+  justify-content: space-between;
+
+}
+
+/* CSS for styled table */
+/* Style for placing tables side by side */
+
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+  border: 1px solid #ddd;
+  /* Table border */
+}
+
+/* Table header */
+.styled-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  /* Border for header cells */
+}
+
+/* Alternate row colors */
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Table cell style */
+.styled-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  /* Border for table cells */
+}
+
+/* Hover effect */
+.styled-table tbody tr:hover {
+  background-color: #e2e2e2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Animation for rows */
+.styled-table tbody tr {
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  /* Rounded edges */
+}
+
+.styled-table tbody tr:hover {
+  transform: scale(1.05);
+}
+
+/* Base table styles for styled-table2 */
+.styled-table2 {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+}
+
+.styled-table2 th,
+.styled-table2 td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.styled-table2 th {
+  background-color: #e8e8e8;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+
+.styled-table2 tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.styled-table2 tbody tr:hover {
+  background-color: #dcdcdc;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.styled-table2 tbody tr {
+  transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1);
+  border-radius: 8px;
+}
+
+.styled-table2 tbody tr:hover {
+  transform: scale(1.05);
+}
+
+/* Base table styles for styled-table3 */
+.styled-table3 {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+
+}
+
+.styled-table3 th,
+.styled-table3 td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.styled-table3 th {
+  background-color: #e8e8e8;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+
+.styled-table3 tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.styled-table3 tbody tr:hover {
+  background-color: #dcdcdc;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.styled-table3 tbody tr {
+  transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1);
+  border-radius: 8px;
+}
+
+.styled-table3 tbody tr:hover {
+  transform: scale(1.05);
+}
+
+
+/* Media Queries */
+
+/* Mobile phones */
+@media screen and (max-width: 576px) {
+  .styled-table {
+    /* Adjust styles for mobile screens */
+    font-size: 12px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .styled-table {
+    /* Adjust styles for tablet screens */
+    font-size: 14px;
+  }
+}
+
+/* Desktops and larger */
+@media screen and (min-width: 993px) {
+  .styled-table {
+    /* Adjust styles for desktop screens */
+    font-size: 16px;
+  }
+}

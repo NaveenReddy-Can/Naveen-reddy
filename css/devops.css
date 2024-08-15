@@ -1,24 +1,40 @@
 /* General styles */
 /* Your general styles go here */
-
 /* Header styles */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: 20px;
   background-color: #333;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* Use a higher z-index to ensure the header appears above other elements */
 }
+
 
 .logo img {
-  width: 100px; /* Adjust the width as needed */
+  width: 100px;
+  /* Adjust the width as needed */
   height: auto;
+  position: fixed;
+  /* Use fixed positioning */
+  left: 0;
+  /* Align to the left edge of the screen */
+  top: 0;
+  /* Align to the top edge of the screen */
+  margin: 20px;
+  /* Optional margin for positioning */
 }
 
+
 nav ul {
+  position: fixed;
   list-style: none;
-  display: flex;
+  justify-content: center;
+  display: contents;
 }
 
 nav ul li {
@@ -50,7 +66,8 @@ nav ul li:hover .dropdown-content {
 }
 
 .active {
-  font-weight: bold; /* Highlight the active menu item */
+  font-weight: bold;
+  /* Highlight the active menu item */
 }
 
 .user-options a {
@@ -58,24 +75,30 @@ nav ul li:hover .dropdown-content {
   text-decoration: none;
   margin-left: 20px;
 }
+
 .icon-list {
   display: flex;
-  justify-content: space-around; /* Adjust as needed */
+  justify-content: space-around;
+  /* Adjust as needed */
   align-items: end;
 }
 
 .icon-list a {
-  margin: 0 10px; /* Adjust as needed */
-  transition: transform 0.3s ease-in-out; /* Transition effect */
+  margin: 0 10px;
+  /* Adjust as needed */
+  transition: transform 0.3s ease-in-out;
+  /* Transition effect */
 }
 
 .icon-list a:hover {
-  transform: scale(1.1); /* Enlarge on hover */
+  transform: scale(1.1);
+  /* Enlarge on hover */
 }
 
 .icon-list img {
-  width: 50px; /* Adjust icon size as needed */
-  height: auto;
+  width: 50px;
+  /* Adjust icon size as needed */
+  height: auto
 }
 /* Main content styles */
 
@@ -174,7 +197,14 @@ nav ul li:hover .dropdown-content {
   height: auto;
   margin-bottom: 15px;
 }
-
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Media Queries */
 /* Add media queries for different screen sizes */
 /* Previous CSS styles remain the same */
@@ -301,38 +331,6 @@ nav ul li:hover .dropdown-content {
 }
 
 
-/* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  align-items: center;
-}
-
-.footer-content {
-
-  justify-content: space-between;
- 
-}
-
-.footer-links ul {
-  list-style: none;
-  display: flex;
-}
-
-.footer-links ul li {
-  margin-right: 15px;
-}
-
-.footer-links ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-}
 
 
 

@@ -1,1 +1,81 @@
-# Personal web-site
+Naveen Reddy's Personal Website
+Overview
+This is a personal website for Naveen Reddy, showcasing his skills and expertise in various fields such as programming, DevOps, cloud computing, and database management.
+
+Features
+A responsive design that adapts to different screen sizes and devices
+A navigation menu that allows users to easily navigate between pages
+A hero section on each page that showcases Naveen's skills and expertise
+A features section on each page that provides more information about Naveen's skills and experience
+A footer section that includes links to Naveen's social media profiles and contact information
+Pages
+Home (index.html)
+Introduction to Naveen and his professional background
+Links to other pages on the website
+Programming (programming.html)
+Overview of Naveen's programming skills and experience
+List of programming languages and technologies that Naveen is proficient in
+Links to Naveen's GitHub and other coding platforms
+DevOps (devops.html)
+Overview of Naveen's DevOps skills and experience
+List of DevOps tools and technologies that Naveen is familiar with
+Links to Naveen's DevOps-related projects and certifications
+Cloud (cloud.html)
+Overview of Naveen's cloud computing skills and experience
+List of cloud platforms and services that Naveen is proficient in
+Links to Naveen's cloud-related projects and certifications
+Database (database.html)
+Overview of Naveen's database management skills and experience
+List of database management systems and technologies that Naveen is familiar with
+Links to Naveen's database-related projects and certifications
+Diet (diet.html)
+Overview of Naveen's interests and hobbies outside of work
+List of Naveen's favorite foods and restaurants
+Links to Naveen's social media profiles
+Files and Folders
+index.html
+The home page of the website
+programming.html
+The programming page of the website
+devops.html
+The DevOps page of the website
+cloud.html
+The cloud computing page of the website
+database.html
+The database management page of the website
+diet.html
+The diet and hobbies page of the website
+images-icons
+Folder containing images and icons used throughout the website
+n.png: Logo image used in the navigation menu and footer
+big-logo.png: Hero image used on each page to showcase Naveen's skills and expertise
+az.jpg: Image of Azure logo
+AWS.jpg: Image of AWS logo
+Google-Cloud-Platform.png: Image of Google Cloud Platform logo
+java-script
+Folder containing JavaScript files used throughout the website
+script.js: JavaScript file for interactive elements on the website
+css
+Folder containing CSS files used throughout the website
+styles.css: CSS file for styling the website
+bootstrap
+Folder containing Bootstrap files used throughout the website
+bootstrap.min.css: Bootstrap CSS file
+bootstrap.bundle.min.js: Bootstrap JavaScript file
+font-awesome
+Folder containing Font Awesome files used throughout the website
+font-awesome.min.css: Font Awesome CSS file
+Technologies Used
+HTML5
+CSS3
+Bootstrap 5
+Font Awesome 4 and 6
+JavaScript (for interactive elements)
+License
+This project is licensed under the MIT License. See LICENSE for details.
+
+Author
+Naveen Reddy
+
+Contact
+Email GitHub LinkedIn

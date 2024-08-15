@@ -1,7 +1,8 @@
 /* General styles */
 /* Your general styles go here */
 /* Header styles */
-header {
+/* Header styles */
+ header {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -13,7 +14,6 @@ header {
   z-index: 1000;
   /* Use a higher z-index to ensure the header appears above other elements */
 }
-
 
 .logo img {
   width: 100px;

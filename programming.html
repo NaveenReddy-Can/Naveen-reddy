@@ -14,148 +14,104 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
   <header>
-  
     <nav>
       <div class="logo">
         <img src="images-icons/n.png" alt="Logo">
       </div>
       <ul>
-        <li><a href="index.html" >Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="dropdown">
-          <a href="programming.html" class="active" style="color: #ffa500" >Programming</a>
-          
+          <a href="programming.html" class="active" style="color: #ffa500">Programming</a>
         </li>
-
         <li class="dropdown">
           <a href="devops.html">Devops</a>
-          
         </li>
         <li class="dropdown">
           <a href="cloud.html">Cloud</a>
-          
         </li>
         <li class="dropdown">
-        <a href="database.html">Database</a>
-          
+          <a href="database.html">Database</a>
         </li>
         <li> <a href="diet.html">Diet</a></li>
       </ul>
-
     </nav>
-    
-  </div>
-  
-
-    
-
   </header>
-
-  <!-- The previous HTML structure remains the same -->
 
   <main>
     <section class="hero-section">
-      <div class="big-logo">
-
-      </div>
-     
-     
+      <div class="big-logo"></div>
       <p>Discover the latest innovations and explore our services.</p>
     </section>
+
     <div class="jobs">
       <button class="dropdown-btn" onclick="toggleDropdown()"> <i class="fas fa-bars"></i> Jobs</button>
       <div class="icon-container" id="iconDropdown">
-        <!-- Indeed -->
-        <a href="https://www.indeed.com/" target="_blank">
-            <img src="/images-icons/I.png" alt="Indeed">
-        </a>
-    
-        <!-- Monster -->
-        <a href="https://www.monster.com/" target="_blank">
-            <img src="/images-icons/M.png" alt="Monster">
-        </a>
-    
-        <!-- Glassdoor -->
-        <a href="https://www.glassdoor.com/" target="_blank">
-            <img src="/images-icons/g.png" alt="Glassdoor">
-        </a>
-    
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/" target="_blank">
-            <img src="/images-icons/linkedin.png" alt="LinkedIn">
-        </a>
-    
-        <!-- Dice -->
-        <a href="https://www.dice.com/" target="_blank">
-            <img src="/images-icons/dice.png" alt="Dice">
-        </a>
+        <a href="https://www.indeed.com/" target="_blank"><img src="/images-icons/I.png" alt="Indeed"></a>
+        <a href="https://www.monster.com/" target="_blank"><img src="/images-icons/M.png" alt="Monster"></a>
+        <a href="https://www.glassdoor.com/" target="_blank"><img src="/images-icons/g.png" alt="Glassdoor"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="/images-icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.dice.com/" target="_blank"><img src="/images-icons/dice.png" alt="Dice"></a>
       </div>
     </div>
 
     <section class="features">
       <h2>Our Features</h2>
       <div class="cards-carousel">
-        <!-- Carousel for rotating cards goes here -->
-        <!-- Each card can be a service or feature -->
 
-        <a
-          href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=148251083167&campaign=19313278993&creative=660800583109&device=c&keyword=jira%20software%20app&matchtype=p&network=g&placement=&ds_kids=p74602270765&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJjwiWQKankcowGRda7FWY0JC8KMEURrratWgte4tTEjkk4E1aZkbvAaAr9nEALw_wcB&gclsrc=aw.ds">
+        <a href="programming/bash.html">
           <div class="card">
-            <h3>JIRA</h3>
-            <img src="images-icons/jira-social.png" alt="Big Logo">
+            <h3>Bash</h3>
+            <img src="images-icons/bash.png" alt="Bash Logo">
           </div>
         </a>
-        <a href="https://www.figma.com/">
-        <div class="card">
-          <h3>Figma</h3>
-          <img src="images-icons/figma.png" alt="Big Logo">
-        </div>
-      </a>
-        <a href="https://kubernetes.io/docs/home/" target="_blank" >
-        <div class="card">
-          <h3>Kubernetes</h3>
-          <img src="images-icons/Kubernetes.png" alt="Big Logo">
-        </div>
-      </a>
-      <a href="https://www.docker.com/#">
-        <div class="card">
-          <h3>Docker</h3>
-          <img src="images-icons/Docker.png" alt="Big Logo">
-        </div>
-        </a>
-        <a href="https://www.terraform.io/">
+
+        <a href="programming/c-sharp.html">
           <div class="card">
-            <h3>Terraform</h3>
-            <img src="images-icons/terrfaorm.png" alt="Big Logo">
+            <h3>C#</h3>
+            <img src="images-icons/csharp.png" alt="C# Logo">
           </div>
-          </a>
-       
-          <a href="https://spring.io/projects/spring-boot/">
-            <div class="card">
-              <h3>Spring Boot</h3>
-              <img src="images-icons/spring.png" alt="Big Logo">
-            </div>
-            </a>
-       
-            <a href="https://react.dev/">
-              <div class="card">
-                <h3>React</h3>
-                <img src="images-icons/React.jpg" alt="Big Logo">
-              </div>
-              </a>
-       
-              <a href="https://www.mongodb.com/">
-                <div class="card">
-                  <h3>mongodb</h3>
-                  <img src="images-icons/mongo.jpg" alt="Big Logo">
-                </div>
-                </a>
-               
-        <!-- Add more cards as needed -->
+        </a>
+
+        <a href="programming/django.html">
+          <div class="card">
+            <h3>Django</h3>
+            <img src="images-icons/django.png" alt="Django Logo">
+          </div>
+        </a>
+
+        <a href="programming/flask.html">
+          <div class="card">
+            <h3>Flask</h3>
+            <img src="images-icons/flask.png" alt="Flask Logo">
+          </div>
+        </a>
+
+        <a href="programming/python.html">
+          <div class="card">
+            <h3>Python</h3>
+            <img src="images-icons/python.png" alt="Python Logo">
+          </div>
+        </a>
+
+        <a href="programming/react.html">
+          <div class="card">
+            <h3>React</h3>
+            <img src="images-icons/react.jpg" alt="React Logo">
+          </div>
+        </a>
+
+        <a href="programming/spring.html">
+          <div class="card">
+            <h3>Spring</h3>
+            <img src="images-icons/spring.png" alt="Spring Logo">
+          </div>
+        </a>
+
       </div>
     </section>
 
@@ -163,36 +119,28 @@
       <h2>Options to Explore</h2>
       <div class="explore-options">
         <a href="https://ielts.org/">
-        <div class="explore-option">
-          <img src="images-icons/ielts.png" alt="Explore Option 1">
-          <h3>IELTS</h3>
-        </div>
+          <div class="explore-option">
+            <img src="images-icons/ielts.png" alt="IELTS">
+            <h3>IELTS</h3>
+          </div>
         </a>
-        <a href="">
-        <div class="explore-option">
-          <img src="images-icons/cyber.jpg" alt="Explore Option 2">
-          <h3>Cyber-Security</h3>
-        </div>
-      </a>
-        <!-- Add more explore options -->
+
+        <a href="#">
+          <div class="explore-option">
+            <img src="images-icons/cyber.jpg" alt="Cyber Security">
+            <h3>Cyber-Security</h3>
+          </div>
+        </a>
+
       </div>
     </section>
 
-    <!-- Add more sections with different content -->
   </main>
 
-
   <footer>
-   
-        
-    
-       <p>&copy; 2024 Your Website. All rights reserved.</p>
-
-      
-     
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
   </footer>
-  
-  
+
 </body>
 
 </html>
